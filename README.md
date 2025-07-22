@@ -104,7 +104,7 @@ Frontend ↔ REST API ↔ Backend ↔ Local File System
 
 * Java 17+
 * Maven 3.6+
-* Node.js & npm
+* MySQL 8 
 * Git
 
 ### Backend Setup
@@ -138,31 +138,6 @@ bash
    mvn spring-boot:run
 ```
 4. Backend runs at http://localhost:8080
-
-### Frontend Setup
-
-1. Open a new terminal, navigate to frontend:
-
-   
-bash
-```
-   cd Dropnest/frontend
-```
-
-2. Install dependencies:
-
-   
-bash
-```
-   npm install
-```
-3. Start development server:
-
-   
-bash
-   npm start
-
-4. Frontend runs at http://localhost:3000
 
 ---
 
@@ -198,6 +173,24 @@ bash
 *Preview inline for text and images*
 
 ---
+
+## Usage
+
+1. Navigate to http://localhost:3000
+2. Drag & drop or click **Browse Files** to select a file
+3. Click **Upload**
+4. View your uploaded file in the list
+5. Click **Preview** to view inline, **Download** to save locally, or **Delete** to remove
+
+## ✨ Future Improvements
+If I had more time, I would:
+
+✅ Add unit and integration tests.
+✅ Add input validation and error handling for malformed payloads.
+✅ Implement support for percentage-based discounts or more complex rules.
+✅ Add authentication and authorization to secure the endpoints.
+✅ Containerize with Docker and provide a docker-compose.yml for easy setup.
+
 
 ## Contributing
 
