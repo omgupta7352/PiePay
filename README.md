@@ -45,8 +45,7 @@ A Spring Boot backend service that:
 
 ## Tech Stack
 
-- **Backend:** Java, Spring Boot, Spring Data JPA, H2/MySQL, Local File System  
-- **Frontend:** React, React Router, Axios, Tailwind CSS  
+- **Backend:** Java, Spring Boot, Spring Data JPA, MySQL, Local File System  
 - **Build:** Maven (backend), npm (frontend)  
 - **Version Control:** Git, GitHub  
 
