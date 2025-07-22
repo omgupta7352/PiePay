@@ -62,43 +62,7 @@ A Spring Boot backend service that:
 └──────────────┘                        └───────────────────┘                        └───────────────┘
 
 ```
-
-## UML Diagram
-
-```
-+-------------------+         +------------------------+
-|   FileController  |         |    FileService         |
-|-------------------|         |------------------------|
-| - fileService     |<>------>| - fileRepository       |
-|                   |         | - storagePath          |
-| + uploadFile()    |         | + uploadFile()         |
-| + getAllFiles()   |         | + getAllFiles()        |
-| + downloadFile()  |         | + downloadFile()       |
-| + deleteFile()    |         | + deleteFile()         |
-+-------------------+         +------------------------+
-        |
-        | Uses
-        v
-+---------------------+
-|     FileEntity      |
-|---------------------|
-| - id                |
-| - filename          |
-| - originalFilename  |
-| - contentType       |
-| - size              |
-| - uploadTime        |
-+---------------------+
-
-+-------------------------+
-|     FileRepository      |
-|-------------------------|
-| extends JpaRepository   |
-| + findByFilename()      |
-+-------------------------+
-
-Frontend ↔ REST API ↔ Backend ↔ Local File System
-```
+---
 
 ## Getting Started
 
@@ -140,10 +104,6 @@ bash
    mvn spring-boot:run
 ```
 4. Backend runs at http://localhost:8080
-
----
-
-
 
 ---
 
