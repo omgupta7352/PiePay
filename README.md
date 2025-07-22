@@ -93,12 +93,12 @@ bash
 
 ## Screenshots
 
-![Home Page](dropnest1.png)
-*Home page with upload & file list*
+![Home Page](img1.png)
+*post*
 
-![Preview](dropnest2.png)
-![Preview](dropnest3.png)
-*Preview inline for text and images*
+![Preview](img2.png)
+![Preview](img3.png)
+*get*
 
 ---
 
