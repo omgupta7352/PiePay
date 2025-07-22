@@ -112,8 +112,8 @@ Frontend ↔ REST API ↔ Backend ↔ Local File System
 
    
 bash
-   git clone https://github.com/omgupta7352/Dropnest.git
-   cd Dropnest/backend
+   git clone https://github.com/omgupta7352/PiePay.git
+   cd PiePay
 
 2. Configure database in src/main/resources/application.properties:
 
@@ -140,15 +140,6 @@ bash
 
 ---
 
-## API Endpoints
-
-| Method | Endpoint                   | Description           |
-| ------ | -------------------------- | --------------------- |
-| POST   | /api/files/upload          | Upload a file         |
-| GET    | /api/files                 | List all files        |
-| GET    | /api/files/{filename}      | Download file by Name  |
-| GET    | /api/preview/{filename}    | Preview file (inline) |
-| DELETE | /api/files/{id}            | Delete file by ID     |
 
 
 ---
