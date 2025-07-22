@@ -54,10 +54,13 @@ A Spring Boot backend service that:
 ## Architecture
 
 ```
-┌─────────┐          ┌──────────────┐   HTTP   ┌─────────────┐
-│Browser  │◀────────▶│React Frontend│◀────────▶│Spring Boot│
-│ (UI)    │   REST   │ (Tailwind)   │   API    │  Backend    │
-└─────────┘          └──────────────┘          └─────────────┘
+┌──────────────┐        REST API        ┌───────────────────┐        JPA / SQL        ┌───────────────┐
+│   Client     │  ───────────────────▶  │ Spring Boot       │  ───────────────────▶  │   MySQL 8     │
+│ (Postman or  │   (POST /offer, GET    │ Application       │   (OfferRepository)     │ Database      │
+│  Browser)    │    /highest-discount)  │ (Controller +     │   persists/fetches      │ (offers table)│
+│              │  ◀───────────────────  │ Service Layer)    │  ◀───────────────────  │               │
+└──────────────┘                        └───────────────────┘                        └───────────────┘
+
 ```
 
 ## UML Diagram
