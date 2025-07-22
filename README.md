@@ -174,22 +174,22 @@ bash
 
 ---
 
-## Usage
+## Scaling GET `/highest-discount` to 1,000 RPS
+To handle very high load:
 
-1. Navigate to http://localhost:3000
-2. Drag & drop or click **Browse Files** to select a file
-3. Click **Upload**
-4. View your uploaded file in the list
-5. Click **Preview** to view inline, **Download** to save locally, or **Delete** to remove
+- ✅ Add indexes on `bank_name` and `payment_instrument` columns to speed up lookups.
+- ✅ Use **caching (e.g., Redis)** for frequently queried bank/payment combinations.
+- ✅ Enable connection pooling (HikariCP) and tune pool size.
+- ✅ Scale horizontally by running multiple instances behind a load balancer.
 
 ## ✨ Future Improvements
 If I had more time, I would:
 
-✅ Add unit and integration tests.
-✅ Add input validation and error handling for malformed payloads.
-✅ Implement support for percentage-based discounts or more complex rules.
-✅ Add authentication and authorization to secure the endpoints.
-✅ Containerize with Docker and provide a docker-compose.yml for easy setup.
+- ✅ Add unit and integration tests.
+- ✅ Add input validation and error handling for malformed payloads.
+- ✅ Implement support for percentage-based discounts or more complex rules.
+- ✅ Add authentication and authorization to secure the endpoints.
+- ✅ Containerize with Docker and provide a `docker-compose.yml` for easy setup.
 
 
 ## Contributing
