@@ -16,30 +16,13 @@ A Spring Boot backend service that:
 
 ## Table of Contents 🚀
 
-1. [Features](#features)
-2. [Tech Stack](#tech-stack)  
-3. [Architecture](#architecture)
-4. [UML Diagram](#uml-diagram)    
-5. [Getting Started](#getting-started)  
-   - [Prerequisites](#prerequisites)  
-   - [Backend Setup](#backend-setup)  
-   - [Frontend Setup](#frontend-setup)  
-6. [API Endpoints](#api-endpoints)  
-7. [Usage](#usage)  
-8. [Screenshots](#screenshots)  
-9. [Contributing](#contributing)  
-
----
-
-## Features
-
-- **File Upload:** Drag-and-drop or browse local files  
-- **File Listing:** View all uploaded files in a clean interface  
-- **File Preview:** Inline preview for images (`.png`, `.jpg`) and text (`.txt`, `.json`)  
-- **Download:** Download files with a single click  
-- **Delete:** Remove unwanted files permanently  
-- **Type Restrictions:** Only `.txt`, `.png`, `.jpg`, `.jpeg`, `.json` allowed  
-- **Responsive Design:** Mobile-friendly Tailwind CSS UI  
+1. [Tech Stack](#tech-stack)  
+2. [Architecture](#architecture)
+3. [Getting Started](#getting-started)  
+4. [Screenshots](#screenshots)
+5. [Scaling](#scaling)
+6. [Future Improvements](#future-improvements)
+7. [Contributing](#contributing)  
 
 ---
 
