@@ -6,6 +6,12 @@ Secure, lightweight Dropbox-like application for uploading, previewing, download
 
 # 📌 Flipkart Offers Service
 
+A Spring Boot backend service that:
+
+- Stores Flipkart offers into a MySQL database via `POST /offer`  
+- ✅ Returns the highest discount amount for a given bank (and optional payment instrument) via `GET /highest-discount`  
+- ✅ **Bonus:** Supports filtering by `paymentInstrument` (e.g., CREDIT, EMI_OPTIONS)
+
 ---
 
 ## Table of Contents 🚀
