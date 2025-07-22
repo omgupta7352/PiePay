@@ -79,9 +79,10 @@ A Spring Boot backend service that:
 
    
 bash
+```
    git clone https://github.com/omgupta7352/PiePay.git
    cd PiePay
-
+```
 2. Configure database in src/main/resources/application.properties:
 
    
