@@ -110,6 +110,8 @@ To handle very high load:
 - ✅ Enable connection pooling (HikariCP) and tune pool size.
 - ✅ Scale horizontally by running multiple instances behind a load balancer.
 
+  ---
+
 ## ✨ Future Improvements
 If I had more time, I would:
 
@@ -119,6 +121,7 @@ If I had more time, I would:
 - ✅ Add authentication and authorization to secure the endpoints.
 - ✅ Containerize with Docker and provide a `docker-compose.yml` for easy setup.
 
+---
 
 ## Contributing
 
