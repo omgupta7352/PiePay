@@ -152,15 +152,6 @@ bash
 | DELETE | /api/files/{id}            | Delete file by ID     |
 
 
-
-## Usage
-
-1. Navigate to http://localhost:3000
-2. Drag & drop or click **Browse Files** to select a file
-3. Click **Upload**
-4. View your uploaded file in the list
-5. Click **Preview** to view inline, **Download** to save locally, or **Delete** to remove
-
 ---
 
 ## Screenshots
@@ -174,7 +165,7 @@ bash
 
 ---
 
-## Scaling GET `/highest-discount` to 1,000 RPS
+## ⚡ Scaling GET `/highest-discount` to 1,000 RPS
 To handle very high load:
 
 - ✅ Add indexes on `bank_name` and `payment_instrument` columns to speed up lookups.
