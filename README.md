@@ -8,7 +8,7 @@ Secure, lightweight Dropbox-like application for uploading, previewing, download
 
 A Spring Boot backend service that:
 
-- Stores Flipkart offers into a MySQL database via `POST /offer`  
+- ✅ Stores Flipkart offers into a MySQL database via `POST /offer`  
 - ✅ Returns the highest discount amount for a given bank (and optional payment instrument) via `GET /highest-discount`  
 - ✅ **Bonus:** Supports filtering by `paymentInstrument` (e.g., CREDIT, EMI_OPTIONS)
 
@@ -122,9 +122,12 @@ bash
 properties
    ### MySQL
    ```
-   # spring.datasource.url=jdbc:mysql://localhost:3306/dropnest
-   # spring.datasource.username=root
-   # spring.datasource.password=...
+  spring.datasource.url=jdbc:mysql://localhost:3306/piepay?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+  spring.datasource.username=<your-mysql-username>
+  spring.datasource.password=<your-mysql-password>
+  spring.jpa.hibernate.ddl-auto=update
+  spring.jpa.show-sql=true
+
 ```
 3. Build and run:
 
